@@ -58,21 +58,6 @@ class OBJ:
                 v = list(map(float, values[1:4]))
                 if swapyz:
                     v = v[0], v[2], v[1]
-                """if c==0:
-                    minx=v[0]
-                    miny=v[2]
-                    minz=v[1]
-                    maxx=v[0]
-                    maxy=v[2]
-                    maxz=v[1]
-                    print(minx, miny, minz)
-                else:
-                    if v[0]<minx: minx=v[0]
-                    if v[2]<miny: miny=v[2]
-                    if v[1]<minz: minz=v[1]
-                    if v[0]>maxx: maxx=v[0]
-                    if v[2]>maxy: maxy=v[2]
-                    if v[1]>maxz: maxz=v[1]"""
                 
                 self.vertices.append(v)
             elif values[0] == 'vn':
